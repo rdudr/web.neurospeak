@@ -3,3 +3,4 @@
 - [x] Rebuild Dashboard PWA
 - [x] Update Start_NeuroSpeak.bat frontend launcher scripts
 - [x] Update testing bat script port routing
+- [x] Clean up and relocate root bat files
