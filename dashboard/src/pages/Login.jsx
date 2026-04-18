@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Lock, Fingerprint } from 'lucide-react';
-import PixelBlastBackground from '../components/background/PixelBlastBackground';
+import SoftAurora from '../components/background/SoftAurora';
 import GradientText from '../components/ui/GradientText';
 
 export default function Login() {
@@ -13,7 +13,7 @@ export default function Login() {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <PixelBlastBackground />
+      <SoftAurora />
       
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }}
