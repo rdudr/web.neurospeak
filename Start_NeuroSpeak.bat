@@ -50,10 +50,8 @@ echo [5/5] Starting Dashboard and opening Browser...
 start "NeuroSpeak Dashboard Terminal" cmd /k "title NeuroSpeak Dashboard && npm run dev"
 cd ..
 
-:: Wait a few seconds for servers to boot, then open browser
-timeout /t 5 /nobreak > NUL
-echo Opening Dashboard in Google Chrome...
-start chrome "http://localhost:5173" || start http://localhost:5173
+echo The Vite engine will now automatically open your default browser.
+echo If it doesn't open, manually go to http://localhost:5173
 
 echo =========================================================
 echo       SUCCESS! Everything is running.
