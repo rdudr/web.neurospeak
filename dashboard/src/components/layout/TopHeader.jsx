@@ -6,9 +6,9 @@ export default function TopHeader() {
   const { connected, espConnected } = useConnection();
 
   return (
-    <header className="sticky top-0 z-50 w-full glass px-6 py-4 flex justify-between items-center bg-card/80 border-b border-white/5">
-      <div className="flex items-center space-x-3">
-        <Activity className="text-primary w-8 h-8 animate-pulse" />
+    <header className="sticky top-0 z-50 w-full glass px-4 sm:px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 bg-card/80 border-b border-white/5">
+      <div className="flex items-center space-x-3 w-full sm:w-auto justify-center sm:justify-start">
+        <Activity className="text-primary w-8 h-8 animate-pulse shrink-0" />
         <h1 className="text-2xl font-tech font-bold tracking-wider">
           <GradientText>NeuroSpeak</GradientText>
         </h1>

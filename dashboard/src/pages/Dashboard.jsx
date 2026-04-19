@@ -69,9 +69,9 @@ export default function Dashboard() {
               animate={{ scale: 1, opacity: 1, filter: "blur(0px)" }}
               exit={{ scale: 1.1, opacity: 0, filter: "blur(10px)" }}
               transition={{ type: 'spring', bounce: 0.5, duration: 0.6 }}
-              className="z-10"
+              className="z-10 mt-8 lg:mt-0 flex items-center justify-center h-full w-full"
             >
-              <h1 className={`font-tech font-bold transition-all duration-500 ${activeWord !== '---' ? 'text-6xl md:text-8xl text-alert drop-shadow-[0_0_30px_rgba(255,0,110,0.8)]' : 'text-3xl md:text-4xl tracking-widest text-primary/70'}`}>
+              <h1 className={`font-tech font-bold transition-all text-center w-full duration-500 ${activeWord !== '---' ? 'text-5xl sm:text-6xl md:text-8xl text-alert drop-shadow-[0_0_30px_rgba(255,0,110,0.8)]' : 'text-2xl sm:text-3xl md:text-4xl tracking-widest text-primary/70'}`}>
                 {activeWord !== '---' ? activeWord : `Scanning${dots}`}
               </h1>
             </motion.div>
@@ -133,7 +133,7 @@ export default function Dashboard() {
           </div>
 
           {recordStats && (
-            <div className="flex-2 w-full grid grid-cols-3 gap-4">
+            <div className="flex-2 w-full grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 md:mt-0">
               {['v1', 'v2', 'v3'].map((ch, idx) => {
                 const colors = ['text-primary', 'text-alert', 'text-secondary'];
                 return (
